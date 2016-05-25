@@ -1,3 +1,19 @@
-<p>
-  tweet works!
-</p>
+<div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" src="http://lorempixel.com/64/64/people/?1" alt="...">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading tweet-username">Username</h4>
+    <h5 class="twitter-handle">@handle</h5>
+    <p>
+      Quisque a magna nullam euismod a nam a a vehicula natoque ad pulvinar varius parturient ipsum libero fringilla libero.
+    </p>
+    <app-like
+[likeCount]="tweet.likeCount" 
+[myLike]="tweet.myLike" 
+(like)="onLike($event)"
+></app-like>
+  </div>
+</div>
